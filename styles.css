@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:wght@300;400&display=swap");
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+body {
+  background: #eee;
+  font-family: Alata, Montserrat, sans-serif;
+}
+header {
+  width: 40%;
+  padding: 40px;
+  margin: auto;
+  text-align: center;
+  background-color: pink;
+}
+h1 {
+  padding: 10px;
+  margin: 0px;
+}
+li {
+  display: inline;
+  padding: 2%;
+}
+h2 {
+  text-align: center;
+}
+img {
+  margin: auto;
+  border: 2px solid red;
+  padding: 20px;
+}
+.feature {
+  display: block;
+  width: 800px;
+}
+.geninfo {
+  width: 750px;
+  text-align: center;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 50px;
+  background-color: rgb(154, 162, 233);
+}
+.links {
+  display: flex;
+  justify-content: space-around;
+  width: 800px;
+  margin: auto;
+  padding: 30px;
+}
+.biglink {
+  width: 300px;
+  text-align: center;
+  border: 3px solid red;
+  padding: 40px 20px;
+  background-color: pink;
+}
+a {
+  text-decoration: none;
+}
+.imgAndBlurbs {
+  display: flex;
+  width: 750px;
+  border: 2px solid red;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-evenly;
+  padding: 25px;
+}
+.imgAndBlurbs img {
+  width: 40%;
+}
+.imgAndBlurbs p {
+  width: 60%;
+  padding: 50px;
+  text-align: center;
+  align-self: center;
+  background-color: pink;
+  border-radius: 10px;
+}
