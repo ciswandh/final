@@ -96,6 +96,7 @@ footer {
   margin: auto;
   align-items: stretch;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .featureBlurb img {
   width: 60%;
@@ -117,6 +118,24 @@ footer {
 .gallery {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 50px;
+  align-items: center;
+}
+.art {
+  width: 30%;
+}
+.art img {
+  width: 100%;
+}
+
+.caption {
+  width: 100%;
+  padding: 30px;
+  text-align: center;
+  font-size: 20px;
+  border-radius: 10px;
+  background-color: #dd9b8b;
 }
 /* tablet code below ----------- */
 @media (min-width: 480px) and (max-width: 768px) {
@@ -137,6 +156,19 @@ footer {
   .imgAndBlurbs p {
     width: 200px;
     padding: 25px;
+  }
+  .featureBlurb {
+    width: 80%;
+  }
+  .featureBlurb img,
+  .featureBlurb div {
+    width: 100%;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .art {
+    width: 45%;
   }
 }
 /* mobile code below ---------- */
@@ -169,5 +201,18 @@ footer {
   }
   .imgAndBlurbs img {
     margin: 10px;
+  }
+  .featureBlurb img,
+  .featureBlurb div {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+  .art {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .caption {
+    font-size: 14px;
   }
 }
