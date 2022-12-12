@@ -48,7 +48,7 @@ h2 {
   margin: auto;
   padding: 30px;
 }
-.biglink {
+.bigLink {
   width: 300px;
   text-align: center;
   border: 3px solid #3b2f44;
@@ -62,6 +62,7 @@ a {
 }
 a:hover {
   text-decoration: underline;
+  color: #dd9b8b;
 }
 .imgAndBlurbs div {
   display: flex;
@@ -137,6 +138,101 @@ footer {
   border-radius: 10px;
   background-color: #dd9b8b;
 }
+#main {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-top: 20px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+#blog {
+  width: 60%;
+  background-color: #ab446b;
+  border-radius: 20px;
+}
+#blog img {
+  width: 100%;
+}
+article {
+  margin: 30px;
+  padding: 30px;
+  background-color: #9a9cbf;
+  box-shadow: -3px 10px 5px 5px #3b2f44;
+  border-radius: 5px;
+}
+article h2 {
+  text-align: left;
+  color: #ab446b;
+  margin-bottom: 0px;
+}
+article h3 {
+  font-size: 14px;
+  color: #c67a66;
+  margin-top: 0px;
+}
+#sidebar {
+  width: 30%;
+}
+#sidebar div {
+  background-color: #adafd1;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+}
+#sidebar h2 {
+  color: #ab446b;
+  font-size: 20px;
+}
+
+#jump a {
+  display: block;
+}
+#sidebar .contactLink {
+  text-align: center;
+  padding: 30px;
+}
+.bio {
+  display: flex;
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.bio img {
+  width: 40%;
+}
+.bioText {
+  background-color: #9a9cbf;
+  padding: 50px;
+  width: 50%;
+  border-radius: 5px;
+}
+form {
+  margin: auto;
+  width: 600px;
+  background-color: #9a9cbf;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  border: 10px solid #68698f;
+}
+textarea {
+  width: 80%;
+  background-color: #f6f0f0;
+  color: #ab446b;
+  font-family: Alata, sans-serif;
+  font-size: 16px;
+}
+button {
+  margin: auto;
+  width: 30%;
+  font-family: Alata, sans-serif;
+  background-color: #dd9b8b
+  border: 2px solid #c67a66;
+}
+
 /* tablet code below ----------- */
 @media (min-width: 480px) and (max-width: 768px) {
   header {
@@ -169,6 +265,24 @@ footer {
 
   .art {
     width: 45%;
+  }
+  #main {
+    width: 100%;
+  }
+  #sidebar {
+    width: 35%;
+  }
+  article {
+    margin: 15px;
+    padding: 15px;
+    box-shadow: -3px 3px 3px 3px;
+  }
+  .bio {
+    width: 100%;
+  }
+  form {
+    width: 400px;
+
   }
 }
 /* mobile code below ---------- */
@@ -214,5 +328,40 @@ footer {
   }
   .caption {
     font-size: 14px;
+  }
+  #sidebar {
+    order: -1;
+    width: 100%;
+    text-align: center;
+  }
+  #blog {
+    width: 100%;
+  }
+  article {
+    margin: 15px;
+    padding: 15px;
+    box-shadow: -3px 3px 3px 3px;
+  }
+  #sidebar #jump {
+    padding: 20px;
+  }
+  .bio {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .bio img {
+    width: 80%;
+    order: -1;
+    margin: 10px;
+  }
+  .bioText {
+    width: 90%;
+    text-align: center;
+  }
+  form {
+    width: 100%;
+  }
+  button {
+    width: 100px;
   }
 }
